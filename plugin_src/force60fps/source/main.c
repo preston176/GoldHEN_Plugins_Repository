@@ -17,7 +17,7 @@ s32 sceVideoOutSetFlipRate_hook(s32 handle, s32 fliprate)
 {
     return HOOK_CONTINUE(sceVideoOutSetFlipRate,
                         s32 (*)(s32, s32),
-                        handle, 2);
+                        handle, 0);
 }
 
 s32 attr_module_hidden module_start(s64 argc, const void *args)
